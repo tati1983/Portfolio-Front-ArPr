@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <a href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank">
+                <img src="../../../assets/logoArPr.png" id="logoAP">
+            </a>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/tati1983" target="_blank">
+                <img src="../../../assets/github.png" id="github" class="col col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            </a>
+            <a href="https://www.linkedin.com/in/francisco-peralta-27735723b/" target="_blank">
+                <img src="../../../assets/linkedin.png" id="linkedin" class="col col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            </a>
+            <button type="button" class="btn btn-light btn-sm" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+            <button type="button" class="btn btn-light btn-sm" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
+        </div>      
+    </div>
+</div>

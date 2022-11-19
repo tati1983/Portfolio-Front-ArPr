@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    margin-left: -6px;
+}
+@media(max-width: 576px) {
+    footer {
+        margin-left: -5px;
+    }
+}

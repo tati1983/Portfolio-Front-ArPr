@@ -1,0 +1,26 @@
+div{
+    background-color: black;
+    color: white;
+    margin-left: -15px;
+}
+hr{
+    width: 500px;
+    margin-left: 50px;
+    margin-bottom: 41px;
+}
+.row{
+    padding: 70px;
+    
+}
+h1, h3{
+    display: inline;
+}
+.m-top{
+    margin-top: 40px;
+}
+#titulo{
+    margin-top: 50px;
+}
+td{
+    color: white;
+}

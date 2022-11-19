@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            <button type="button" class="btn btn-light margen-izq" routerLink="/editacercade/1" *ngIf="isLogged">
+                Editar
+            </button>  
+        </div>
+        <div class="col-12 col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <img src={{img}} class="img-fluid" id="foto-perfil">
+        </div>
+        <div class="col col-xs-12 col-sm-2 col-md-2 col-lg-2 color-txt fondo-transparente" id="nombre-titulo">
+            <p class="text-center" id="nombre">{{persona?.nombre}} {{persona?.apellido}}</p>
+            <p class="text-center">Full Stack Developer Jr</p>
+        </div>
+        <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6 color-txt fondo-transparente" id="acerca-de-mi">
+            <span>
+                <h1 class="text-center">Acerca de mi</h1>
+            </span>
+            <p class="justify">{{persona?.descripcion}}</p>
+    </div>
+</div>
+
+

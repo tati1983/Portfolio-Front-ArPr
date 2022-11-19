@@ -1,0 +1,14 @@
+.color-txt{
+    color: white;
+}
+.m-top{
+    margin-top: 20px;
+}
+.foto-perfil{
+    position: absolute;
+    width: 11%;
+    left: 7%;
+    border-radius: 100%;
+    box-shadow: 2px 2px 15px rgb(67, 1, 67);
+    top: 350px;
+}

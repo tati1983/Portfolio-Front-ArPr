@@ -1,0 +1,36 @@
+<div class="container-fluid" *ngIf="persona">
+    <div class="row">
+        <div>
+            <form class="color-txt" (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="form group color-fondo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" 
+                    [(ngModel)]="persona.nombre" required>
+                </div>
+                <div class="form group color-fondo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" 
+                        [(ngModel)]="persona.apellido" required>
+                </div>
+                <div class="form group color-fondo">
+                    <label for="img">Imagen</label>
+                    <input type="file" class="form-control" id="img" name="img" 
+                        [(ngModel)]="persona.img" (change)="previewImage($event)" 
+                            accept=".jpg, .jpeg, .png">
+                </div>
+                <div class="form group">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                        [(ngModel)]="persona.descripcion" required>
+                </div>
+                <div class="imagen">
+                    <img class="foto-perfil" [src]="imgUrl" width="200 px">      
+                </div>
+                <br>
+                <button type="submit" class="btn btn-light">
+                    Actualizar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+.row{
+    padding: 40px;
+}
+.contenedor{
+    width: auto;
+    padding: 40px;
+}
+.parte1, .parte2{
+    display: inline-block;
+    text-align: justify;
+}
+.color-txt{
+    color: white;
+}
+.img-proy{
+    box-shadow: 10px 10px 50px violet 
+}
+.m-top{
+    margin-top: 40px;
+}
+.tamaño-img{
+    height: 150px;
+    box-shadow: 2px 2px 15px rgb(67, 1, 67);
+}
